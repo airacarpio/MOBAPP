@@ -1,5 +1,6 @@
 package ph.edu.apc.mytenant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -20,10 +21,16 @@ public class Header_Activity extends AppCompatActivity {
         super.onCreate(savedInstancesState);
         setContentView(R.layout.nav_header_content_);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        if(firebaseAuth.getCurrentUser() == null){
+            finish();
+            startActivity(new Intent(this, Signin_Activity.class));
+        }
+
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
         tvUserEmail=(TextView) findViewById(R.id.tvUserEmail);
-        tvUserEmail.setText("Welcome "+ user.getEmail() );
-
+        tvUserEmail.setText("" + user.getEmail() );
     }
 }

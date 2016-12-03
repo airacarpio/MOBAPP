@@ -74,6 +74,7 @@ public class Signin_Activity extends AppCompatActivity implements View.OnClickLi
                         //if the task is successfull
                         if(task.isSuccessful()){
                             //start the profile activity
+                            Toast.makeText(Signin_Activity.this, "Successfully Signin", Toast.LENGTH_SHORT).show();
                             finish();
                             startActivity(new Intent(getApplicationContext(), Content_Activity.class));
                         }else{

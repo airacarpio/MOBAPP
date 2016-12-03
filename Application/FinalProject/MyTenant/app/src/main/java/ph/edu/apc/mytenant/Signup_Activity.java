@@ -38,7 +38,7 @@ public class Signup_Activity extends AppCompatActivity implements View.OnClickLi
 
         if(firebaseAuth.getCurrentUser() != null){
             finish();
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(this, Content_Activity.class));
         }
 
         etEmail=(EditText)findViewById(R.id.etEmail);
@@ -80,10 +80,9 @@ public class Signup_Activity extends AppCompatActivity implements View.OnClickLi
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            //user is successfully registered and logged in
-                            //we will start the profile actvity here
-                            //right now lets display
                             Toast.makeText(Signup_Activity.this, "Account Successfully Created ", Toast.LENGTH_SHORT).show();
+                            finish();
+                            startActivity(new Intent(getApplicationContext(), Content_Activity.class));
                         }else{
                             Toast.makeText(Signup_Activity.this, "Account Could not registered.. Please try again", Toast.LENGTH_LONG).show();
                         }

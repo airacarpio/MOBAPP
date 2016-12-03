@@ -25,6 +25,10 @@
             android:name=".Content_Activity"
             android:label="@string/title_activity_content_"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Header_Activity"
+            android:label="@string/title_activity_content_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
