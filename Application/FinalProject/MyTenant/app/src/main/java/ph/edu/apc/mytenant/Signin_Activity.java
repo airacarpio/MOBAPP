@@ -38,8 +38,7 @@ public class Signin_Activity extends AppCompatActivity implements View.OnClickLi
 
         if(firebaseAuth.getCurrentUser() != null){
             finish();
-            startActivity(new Intent(Signin_Activity.this, MainActivity.class));
-
+            startActivity(new Intent(getApplicationContext(), Content_Activity.class));
         }
         etSEmail=(EditText)findViewById(R.id.etSEmail);
         etSPassword=(EditText)findViewById(R.id.etSPassword);
@@ -76,22 +75,23 @@ public class Signin_Activity extends AppCompatActivity implements View.OnClickLi
                         if(task.isSuccessful()){
                             //start the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            startActivity(new Intent(getApplicationContext(), Content_Activity.class));
+                        }else{
+                            Toast.makeText(Signin_Activity.this, "Registration Error", Toast.LENGTH_LONG).show();
                         }
+                        progressDialog.dismiss();
                     }
                 });
     }
     @Override
     public void onClick(View view) {
-
+        if(view == bSignin){
+            SigninUser();
+        }
         if(view == tvSignup){
             finish();
             startActivity(new Intent(this, Signup_Activity.class));
         }
-        if(view == bSignin){
-            SigninUser();
-        }
-
     }
 }
 
