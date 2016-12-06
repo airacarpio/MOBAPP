@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -14,6 +16,8 @@ public class Splash_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         final ImageView iv = (ImageView) findViewById(R.id.imageView2);
@@ -31,7 +35,7 @@ public class Splash_Activity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 iv.startAnimation(an2);
                 finish();
-                Intent i = new Intent(Splash_Activity.this,Signup_Activity.class);
+                Intent i = new Intent(Splash_Activity.this,Signin_Activity.class);
                 startActivity(i);
 
             }

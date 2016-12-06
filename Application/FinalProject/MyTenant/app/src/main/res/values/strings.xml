@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MyTenant</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_main2">My Tenant</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -26,6 +26,6 @@
     <string name="title_activity_question">Question</string>
     <string name="title_activity_etresult">Answers</string>
     <string name="title_activity_result">Room Inspection Result</string>
-    <string name="title_activity_navgation__main">Navgation_MainActivity</string>
-    <string name="title_activity_content_">Content_Activity</string>
+    <string name="title_activity_navgation__main">My Tenant</string>
+    <string name="title_activity_content_">My Tenant</string>
 </resources>

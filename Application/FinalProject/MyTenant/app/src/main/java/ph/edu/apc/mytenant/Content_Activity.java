@@ -40,7 +40,7 @@ public class Content_Activity extends AppCompatActivity
         }
         FirebaseUser user = firebaseAuth.getCurrentUser();
         tvUserEmail=(TextView) findViewById(R.id.tvUserEmail);
-        tvUserEmail.setText("Welcome " + user.getEmail() );
+        tvUserEmail.setText(" " + user.getEmail() );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -99,18 +99,12 @@ public class Content_Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_about) {
+            Intent i = new Intent(this, About_Activity.class);
+            startActivity(i);
+        }  else if (id == R.id.nav_help) {
+            Intent i = new Intent(this, Help_Activity.class);
+            startActivity(i);
         } else if (id == R.id.nav_logout) {
             firebaseAuth.signOut();
             finish();

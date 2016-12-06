@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="ph.edu.apc.mytenant.Content_Activity"
+    android:background="@drawable/bg7"
     tools:showIn="@layout/app_bar_content_">
 
     <TextView
@@ -30,5 +31,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:id="@+id/bSignout" />
+
+    <Button
+        android:text="Add Tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/bAddTenant"
+        android:layout_below="@+id/bSignout"
+        android:layout_alignLeft="@+id/bSignout"
+        android:layout_alignStart="@+id/bSignout" />
 
 </RelativeLayout>

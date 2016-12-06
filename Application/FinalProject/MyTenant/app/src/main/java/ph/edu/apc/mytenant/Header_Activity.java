@@ -19,7 +19,7 @@ public class Header_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstancesState) {
         super.onCreate(savedInstancesState);
-        setContentView(R.layout.nav_header_content_);
+        setContentView(R.layout.content_);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -31,6 +31,6 @@ public class Header_Activity extends AppCompatActivity {
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
         tvUserEmail=(TextView) findViewById(R.id.tvUserEmail);
-        tvUserEmail.setText("" + user.getEmail() );
+        tvUserEmail.setText("Welcome "+ user.getEmail() );
     }
 }

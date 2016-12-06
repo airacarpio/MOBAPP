@@ -9,35 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="40dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="ph.edu.apc.mytenant.about"
+    tools:context="ph.edu.apc.mytenant.About_Activity"
     tools:showIn="@layout/activity_about">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:text="Copyright © 2016 HBC. All rights reserved"
-        android:layout_marginBottom="64dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView4"
-        android:src="@mipmap/home"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My Tenant"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/imageView4"
-        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,19 +20,48 @@
         android:id="@+id/textView3"
         android:textSize="15dp"
         android:textColor="#020202"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textAlignment="center"
-        android:text="Florence Gail Haboc \n Maica Belchez \n Aira Joyce Carpio"
+        android:text="Florence Gail Haboc \nMaica Belchez \n Aira Joyce Carpio"
         android:id="@+id/textView5"
         android:textColor="#060606"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:id="@+id/textView2"
+        android:textColor="#313131"
+        android:text="Copyright © 2016 HBC. All rights reserved"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Tenant"
+        android:textAlignment="center"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@mipmap/home"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

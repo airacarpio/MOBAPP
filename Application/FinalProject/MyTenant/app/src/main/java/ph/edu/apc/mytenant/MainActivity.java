@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth firebaseAuth;
 
     private TextView tvUserEmail;
-    private Button bSignout;
+    private Button bSignout, bAddTenant;
 
     @Override
     protected void onCreate(Bundle savedInstancesState){
@@ -32,14 +32,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             finish();
             startActivity(new Intent(this, Signin_Activity.class));
         }
-
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
         tvUserEmail=(TextView) findViewById(R.id.tvUserEmail);
-        tvUserEmail.setText("Welcome "+ user.getEmail() );
+        tvUserEmail.setText("Hallo "+ user.getEmail() );
 
         bSignout=(Button)findViewById(R.id.bSignout);
         bSignout.setOnClickListener(this);
+        bAddTenant=(Button)findViewById(R.id.bAddTenant);
+        bAddTenant.setOnClickListener(this);
      }
     @Override
     public void onClick(View view){
@@ -48,5 +49,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             finish();
             startActivity(new Intent(this, Signin_Activity.class));
         }
+
     }
 }
