@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741696552527",
+    "firebase_url": "https://datepicker-37c18.firebaseio.com",
+    "project_id": "datepicker-37c18",
+    "storage_bucket": "datepicker-37c18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741696552527:android:e0d5d9850d96047b",
+        "android_client_info": {
+          "package_name": "goevents.online.datepicker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741696552527-0l90llel5rle7fq9quqqcthh9ieo48gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "goevents.online.datepicker",
+            "certificate_hash": "41F50F7D1AA1FB1C9D2521844F7A20CAA832DBC4"
+          }
+        },
+        {
+          "client_id": "741696552527-9qqu8bmb8pldc5r0gqbo5m33mhpi6muh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlfB6hh0k6WsV-ik-pjFHzq9g61KFvLSQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741696552527-9qqu8bmb8pldc5r0gqbo5m33mhpi6muh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
