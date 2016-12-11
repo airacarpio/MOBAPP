@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ph.edu.apc.mytenant.activity.tenant_form">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText_room"
+        android:hint="Room No." />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_TenantName"
+        android:hint="Tenant Name"
+        android:layout_below="@+id/editText_WMeter"
+        android:layout_alignLeft="@+id/editText_WMeter"
+        android:layout_alignStart="@+id/editText_WMeter"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_WMeter"
+        android:hint="Water Meter"
+        android:layout_below="@+id/editText_EMeter"
+        android:layout_alignLeft="@+id/editText_EMeter"
+        android:layout_alignStart="@+id/editText_EMeter"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_EMeter"
+        android:hint="Electric Meter"
+        android:layout_below="@+id/editText_rentalFee"
+        android:layout_alignLeft="@+id/editText_rentalFee"
+        android:layout_alignStart="@+id/editText_rentalFee"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_rentalFee"
+        android:hint="Rental Fee"
+        android:layout_below="@+id/editText_room"
+        android:layout_alignLeft="@+id/editText_room"
+        android:layout_alignStart="@+id/editText_room"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:hint="Selected Date"
+        android:id="@+id/editText_SelectDate"
+        android:layout_below="@+id/editText_TenantName"
+        android:layout_alignLeft="@+id/editText_TenantName"
+        android:layout_alignStart="@+id/editText_TenantName"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:text="Set Date"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_date"
+        android:layout_below="@+id/editText_SelectDate"
+        android:layout_alignLeft="@+id/button_save"
+        android:layout_alignStart="@+id/button_save" />
+
+    <Button
+        android:text="SAVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button_save"
+        android:layout_below="@+id/button_date"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
